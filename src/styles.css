@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css";
-:host {
+/* @import "~bootstrap/dist/css/bootstrap.css"; */
+#container {
     display: block;
     border: 1px solid black;
-    background-image: url('src/app/images/ig.jpeg');
+    background-image: url('src/app/images/vb.jpeg');
     background-size: cover;
-  }
+  } 
