@@ -11,7 +11,7 @@ export class FooterComponent implements OnInit {
   <div class="container">
   <div class="content has-text-centered">
     <p>
-      Made with <3 by <a href="https://twitter.com/chrisoncode">Chris from Scotch</a>
+      Made with <3 by <a href="https://twitter.com/chrisoncode">joselyne</a>
     </p>
   </div>
   </div>

@@ -6,10 +6,10 @@ import {environment} from './../environments/environment'
   providedIn: 'root'
 })
 export class ApiService {
-  userName: string;
-  apiKey: string = 'environment.apiKey';
+  userName: any;
+  apiKey: any= '421256056ae073cb64d70048bfc1af1d94ad79b0';
   
-  apiUrl: string = "https://api.github.com/users/";
+  apiUrl:any = "https://api.github.com/users/";
 
 
   constructor(public http: HttpClient) {

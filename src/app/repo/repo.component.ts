@@ -10,8 +10,10 @@ export class RepoComponent implements OnInit {
 
   user1;
   repos;
-  userName: string;
-  apiKey: string = 'environment.apiKey';
+  userName: any;
+  timezone;
+  short;
+  apiKey:any = '421256056ae073cb64d70048bfc1af1d94ad79b0';
   
 
 

@@ -14,8 +14,12 @@ export class MasterComponent implements OnInit {
 
   user1;
   repos;
-  userName: string;
-  apiKey: string = 'environment.apiKey';
+  email;
+  location;
+  short;
+  timezone;
+  userName: any;
+  apiKey:any = '421256056ae073cb64d70048bfc1af1d94ad79b0';
 
   constructor(public apiservice: ApiService, private router: Router) {
 
@@ -26,6 +30,11 @@ export class MasterComponent implements OnInit {
     this.apiservice.getRepos().subscribe(result => {
       this.repos = result;
       console.log(this.repos);
+    });
+
+    this.apiservice.getUserDetails().subscribe(users => {
+      this.user1 = users;
+      console.log(this.user1);
     });
   }
 

@@ -22,6 +22,7 @@
   <div class="container">
     <div id="swara">
       <form class="form">
+        
         <input type="text" class="form-control" placeholder="Search Username" [(ngModel)]="userName" name="userName" (keyup)="findUser()">
 
       </form>
@@ -43,14 +44,20 @@
               <span class="badge badge-info">{{user1.public_repos}} Public Repos</span>
               <span class="badge badge-info">{{user1.followers}} Followers</span>
               <span class="badge badge-info">{{user1.following}} Following</span>
+              <span class="badge badge-info">{{user1.email}} Email</span>
+              <span class="badge badge-info">{{user1.short}} short</span>
+              <span class="badge badge-info">{{user1.location}} Location</span>
+
             </div>
             <br>
             <ul class="list-group">
               <li class="list-group-item" appHighlight><strong>user name:</strong> {{user1.login}}</li>
               <li class="list-group-item" *ngIf="location"><strong>Location: </strong>{{user1.location}}</li>
+              <li class="list-group-item" *ngIf="timezone"><strong>Timezone: </strong>{{user1.timezone}}</li>
               <li class="list-group-item" *ngIf="email"><strong>Email:</strong>{{user1.email}}</li>
               <li class="list-group-item"><strong>URL:  </strong> <a href="{{user1.html_url}}" target="_blank"><button class="btn-outline-info">View on Github</button></a></li>
               <li class="list-group-item" appHighlight><strong>Member Since: </strong>{{user1.created_at| date:short:timezone}}</li>
+              
             </ul>
           </div>
         </div>
