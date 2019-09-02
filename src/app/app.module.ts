@@ -11,6 +11,9 @@ import { HighlightDirective} from '../app/directive-highlight.pipe';
 import { RepoComponent } from './repo/repo.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+// import { SearchService } from './search/search.component';
+
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     HighlightDirective,
     RepoComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    // SearchService
   ],
   imports: [
     BrowserModule,
