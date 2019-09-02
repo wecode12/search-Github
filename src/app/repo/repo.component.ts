@@ -28,9 +28,11 @@ export class RepoComponent implements OnInit {
 
   findUser() {
     this.apiservice.updateUserName(this.userName);
+    
     this.apiservice.getUserDetails().subscribe(users => {
       this.user1 = users;
       console.log(this.user1);
+      console.log=(this.repos);
     });
     this.apiservice.getRepos().subscribe(result => {
       this.repos = result;
